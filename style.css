@@ -1,4 +1,12 @@
+section {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 #home {
   background-color: #ffc107;
   color: white;
+}
+
+#cadastro {
+  background-color: #ffc107;
 }
