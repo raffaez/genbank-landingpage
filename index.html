@@ -30,7 +30,7 @@
           <a href="#recursos" class="nav-link">Recursos</a>
           <a href="#beneficios" class="nav-link">Benefícios</a>
           <a href="#sobre" class="nav-link">Sobre nós</a>
-          <a href="#planos" class="nav-link">Planos</a>
+          <a href="#contas" class="nav-link">Contas</a>
           <a href="#cadastro" class="nav-link btn btn-outline-light">Cadastrar</a>
         </div>
       </div>
@@ -138,11 +138,11 @@
     </section>
     <!-- /BENEFICIOS -->
 
-    <!-- PLANOS -->
-    <section id="planos" class="my-5 pb-4">
+    <!-- CONTAS -->
+    <section id="contas" class="my-5 pb-4">
       <div class="container">
         <div class="row">
-          <h1 class="display-4 text-center mb-3">Planos</h1>
+          <h1 class="display-4 text-center mb-3">Contas</h1>
         </div>
         <div class="row">
           <div class="col-md-4">
@@ -152,7 +152,7 @@
                   <h5 class="card-title">Universitário</h5>
                 </div>
                 <p class="card-text">
-                  As facilidades que você precisa para dar os primeiros passos.
+                  As facilidades que você precisa para dar os primeiros passos
                 </p>
               </div>
               <ul class="list-group list-group-flush">
@@ -173,7 +173,7 @@
                 </li>
               </ul>
               <div class="card-body text-center">
-                <a href="#cadastro" id="btn-uni" class="btn btn-primary mt-5">Selecionar</a>
+                <a href="#cadastro" id="btn-uni" class="btn btn-primary">Selecionar</a>
               </div>
             </div>
           </div>
@@ -205,7 +205,7 @@
                 </li>
               </ul>
               <div class="card-body text-center">
-                <a href="#cadastro" id="btn-padrao" class="btn btn-primary mt-4">Selecionar</a>
+                <a href="#cadastro" id="btn-padrao" class="btn btn-primary">Selecionar</a>
               </div>
             </div>
           </div>
@@ -244,7 +244,7 @@
         </div>
       </div>
     </section>
-    <!-- /PLANOS -->
+    <!-- /CONTAS -->
 
     <!-- CADASTRO -->
     <section id="cadastro" class="pt-1 pb-2">
@@ -265,27 +265,27 @@
                 <label for="floatDataNasc">Data de nascimento</label>
               </div>
               <div class="form-floating mb-3 w-75">
-                <input type="number" class="form-control" id="floatCpf" placeholder="CPF" required>
+                <input type="text" class="form-control" id="floatCpf" placeholder="CPF" pattern="^\d{11}$" required>
                 <label for="floatCpf">CPF</label>
               </div>
               <div class="form-check form-check-inline p-0 mb-3">
-                <input type="radio" name="plano" id="plano1">
-                <label for="plano" class="form-check-label">Universitário</label>
+                <input type="radio" name="conta" id="conta1" required>
+                <label for="conta" class="form-check-label">Universitário</label>
               </div>
               <div class="form-check form-check-inline p-0 mb-3">
-                <input type="radio" name="plano" id="plano2">
-                <label for="plano" class="form-check-label">Padrão</label>
+                <input type="radio" name="conta" id="conta2">
+                <label for="conta" class="form-check-label">Padrão</label>
               </div>
               <div class="form-check form-check-inline p-0 mb-3">
-                <input type="radio" name="plano" id="plano3">
-                <label for="plano" class="form-check-label">Da Vinci</label>
+                <input type="radio" name="conta" id="conta3">
+                <label for="conta" class="form-check-label">Da Vinci</label>
               </div>
               <div class="form-floating mb-3 w-75">
-                <input type="email" class="form-control" id="floatEmail" placeholder="E-mail" required>
+                <input type="email" class="form-control" id="floatEmail" placeholder="E-mail" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" required>
                 <label for="floatEmail">E-mail</label>
               </div>
               <div class="form-floating mb-3 w-75">
-                <input type="password" class="form-control" id="floatSenha" placeholder="Senha" required>
+                <input type="password" class="form-control" id="floatSenha" placeholder="Senha" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$" title="aaaaaaaa" required>
                 <label for="floatSenha">Senha</label>
               </div>
               <div class="form-floating mb-3 w-75">
@@ -372,7 +372,7 @@
             <a href="#home">Home</a>
             <a href="#recursos" class="ms-2">Recursos</a>
             <a href="#beneficios" class="ms-2">Benefícios</a>
-            <a href="#planos" class="ms-2">Planos</a>
+            <a href="#contas" class="ms-2">Contas</a>
             <a href="#cadastro" class="ms-2">Cadastro</a>
           </p>
         </div>
