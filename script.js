@@ -26,3 +26,10 @@ const btnDavinci = document.querySelector('#btn-davinci');
 btnUni.addEventListener("click", () => { document.getElementById(`plano1`).checked = true });
 btnPadrao.addEventListener("click", () => { document.getElementById(`plano2`).checked = true });
 btnDavinci.addEventListener("click", () => { document.getElementById(`plano3`).checked = true });
+
+const celular = document.getElementById('floatCelular');
+const maskOptions = {
+  mask: '(00)00000-00000'
+};
+const mask = IMask(celular, maskOptions);
+
